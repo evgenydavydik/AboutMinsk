@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Месцы Мінска</string>
+    <string name="language">Мова</string>
+    <string name="language_ru">Рускі</string>
+    <string name="language_be">Беларускі</string>
+    <string name="language_en">Англійскі</string>
+    <string name="language_cs">Чэшскі</string>
+    <string name="language_zh">Кітайскі</string>
+</resources>

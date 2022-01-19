@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/languagesFragment">
+
+    <fragment
+        android:id="@+id/languagesFragment"
+        android:name="com.davydikes.aboutminsk.screen.screen_languages.FragmentLanguages"
+        android:label="languagesFragment"
+        tools:layout="@layout/fragment_languages">
+        <action
+            android:id="@+id/toFragmentMain"
+            app:destination="@+id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.davydikes.aboutminsk.screen.main.FragmentMain"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_places">
+        <action
+            android:id="@+id/toPlaceDetails"
+            app:destination="@+id/placeDetailsFragment" />
+        <action
+            android:id="@+id/toLanguagesFragment"
+            app:destination="@+id/languagesFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/placeDetailsFragment"
+        android:name="com.davydikes.aboutminsk.screen.pointer_details.FragmentPlaceDetails"
+        android:label="PlaceDetailsFragment"
+        tools:layout="@layout/fragment_place_details">
+        <argument
+            android:name="place"
+            app:argType="com.davydikes.aboutminsk.models.Place"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

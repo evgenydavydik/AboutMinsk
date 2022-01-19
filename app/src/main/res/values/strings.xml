@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Places of Minsk</string>
+    <string name="language">Language</string>
+    <string name="language_ru">Russian</string>
+    <string name="language_be">Belarusian</string>
+    <string name="language_en">English</string>
+    <string name="language_cs">Czech</string>
+    <string name="language_zh">Chinese</string>
+</resources>
